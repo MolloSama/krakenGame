@@ -52,7 +52,7 @@ public class LoadConversation : MonoBehaviour {
         GameObject panel = GameObject.Find("white");
         if(data.Length==3)
         {
-            if (data[0].Equals("主角"))
+            if (data[0].Equals("叶明卿"))
             {
                 panel.transform.Find("leadName").transform.GetComponent<TextMesh>().text = data[0];
                 panel.transform.Find("npcName").transform.GetComponent<TextMesh>().text = "";
@@ -73,9 +73,9 @@ public class LoadConversation : MonoBehaviour {
                 switch (t.name)
                 {
                     case "character":
-                        if (data[0].Equals("主角"))
+                        if (data[0].Equals("叶明卿"))
                         {
-                            t.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("conversation/characters/主角");
+                            t.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("conversation/characters/叶明卿");
                         }
                         else
                         {
@@ -83,7 +83,7 @@ public class LoadConversation : MonoBehaviour {
                         }
                         break;
                     case "npc":
-                        if (!data[0].Equals("主角") && !data[0].Equals("scene"))
+                        if (!data[0].Equals("叶明卿") && !data[0].Equals("scene"))
                         {
                             t.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(string.Format("conversatio/characters/{0}", data[0]));
                         }
