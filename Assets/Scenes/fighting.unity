@@ -1030,6 +1030,7 @@ GameObject:
   - component: {fileID: 618620542}
   - component: {fileID: 618620544}
   - component: {fileID: 618620543}
+  - component: {fileID: 618620546}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1100,6 +1101,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &618620546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618620541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba33c7e710b8544822f44425530d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalUIMusic: {fileID: 1873451202142418, guid: b4cca49d994083b479c93e99b47ea66e,
+    type: 2}
 --- !u!1 &697306521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1404,7 @@ GameObject:
   - component: {fileID: 804783225}
   - component: {fileID: 804783228}
   - component: {fileID: 804783227}
+  - component: {fileID: 804783229}
   m_Layer: 0
   m_Name: playButton
   m_TagString: Untagged
@@ -1491,6 +1506,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControll: {fileID: 783834605}
+--- !u!114 &804783229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 804783224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817588749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,6 +1846,7 @@ GameObject:
   - component: {fileID: 1005246060}
   - component: {fileID: 1005246063}
   - component: {fileID: 1005246062}
+  - component: {fileID: 1005246064}
   m_Layer: 0
   m_Name: endButton
   m_TagString: Untagged
@@ -1921,6 +1948,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControll: {fileID: 783834605}
+--- !u!114 &1005246064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005246059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047252920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,6 +2884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demarcationline: 0
+  gameControll: {fileID: 783834605}
 --- !u!1001 &1533490379
 Prefab:
   m_ObjectHideFlags: 0

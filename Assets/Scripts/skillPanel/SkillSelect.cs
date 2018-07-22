@@ -93,7 +93,7 @@ public class SkillSelect : MonoBehaviour {
     {
         if (skill != null)
         {
-            string text = Regex.Replace(skill.Description, @"\S{10}", "$0\r\n");
+            string text = Regex.Replace(skill.Description, @"\S{16}", "$0\r\n");
             GameObject.Find("skillinfo").GetComponent<TextMesh>().text = "技能介绍：\n" + text;
         }
     }

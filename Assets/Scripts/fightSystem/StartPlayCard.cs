@@ -14,6 +14,7 @@ public class StartPlayCard : MonoBehaviour {
     {
         if (gameControll.PlayCard())
         {
+            transform.localScale = new Vector3(1, 1, 1);
             gameControll.ClickSelectedMonster();
             RenderMonster.needClickMonster = false;
             CardAction.currentIndex = -1;

@@ -7,16 +7,11 @@ public class Escape : MonoBehaviour {
 
     bool isEscaped = false;
     public int demarcationline;
+    public GameControll gameControll;
     // Use this for initialization
     void Start () {
         demarcationline = 50;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     
 
     private void OnMouseDown()
@@ -25,12 +20,17 @@ public class Escape : MonoBehaviour {
         {
             if (GlobalVariable.Chance(demarcationline))
             {
-                SceneManager.LoadScene("settlement");
+                SceneManager.LoadScene("tertiaryMap");
             }
             else
             {
-                Debug.Log("逃跑失败");
+                gameControll.SetTip("逃跑失败");
+                isEscaped = true;
             }
+        }
+        else
+        {
+            gameControll.SetTip("已经逃跑过了");
         }
     }
 }

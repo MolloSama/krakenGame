@@ -764,6 +764,7 @@ public class GameControll : MonoBehaviour {
     {
         if(kraken.BloodVolume <= 0)
         {
+            kraken.BloodVolume = 0;
             if (itemCondition.FullBloodItems.Count > 0)
             {
                 kraken.BloodVolume = krakenMaxHealth;

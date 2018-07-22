@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 159870711}
   - component: {fileID: 159870714}
   - component: {fileID: 159870713}
+  - component: {fileID: 159870715}
   m_Layer: 0
   m_Name: loadButton
   m_TagString: Untagged
@@ -225,6 +226,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveControl: {fileID: 1754600678}
+--- !u!114 &159870715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159870710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &365687870
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +432,7 @@ GameObject:
   - component: {fileID: 999061822}
   - component: {fileID: 999061824}
   - component: {fileID: 999061825}
+  - component: {fileID: 999061826}
   m_Layer: 0
   m_Name: saveButton
   m_TagString: Untagged
@@ -521,6 +534,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.26, y: 3.54}
   m_EdgeRadius: 0
+--- !u!114 &999061826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999061821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1286142556
 Prefab:
   m_ObjectHideFlags: 0
@@ -574,6 +598,7 @@ GameObject:
   - component: {fileID: 1495674461}
   - component: {fileID: 1495674460}
   - component: {fileID: 1495674459}
+  - component: {fileID: 1495674463}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -644,6 +669,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495674463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1495674458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdba33c7e710b8544822f44425530d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalUIMusic: {fileID: 1572654935677522, guid: b17fea26de90ef44e84c0a9c28f38a88,
+    type: 2}
 --- !u!1 &1718089194
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +764,8 @@ GameObject:
   - component: {fileID: 1875633139}
   - component: {fileID: 1875633138}
   - component: {fileID: 1875633140}
+  - component: {fileID: 1875633141}
+  - component: {fileID: 1875633142}
   m_Layer: 0
   m_Name: "button_\u9000\u51FA"
   m_TagString: Untagged
@@ -801,6 +841,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1004c23c0e0d13409de2000a89d29b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1875633141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875633137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1875633142
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875633137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03404045, y: 0.06808001}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.5, y: 2.5}
+    newSize: {x: 6.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.2957582, y: 1.8676783}
+  m_EdgeRadius: 0
 --- !u!1 &1881178634
 GameObject:
   m_ObjectHideFlags: 0

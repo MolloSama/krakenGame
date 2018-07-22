@@ -288,6 +288,8 @@
     <Compile Include="Assets\Scripts\Model\Monster.cs" />
     <Compile Include="Assets\Scripts\Model\SaveModel.cs" />
     <Compile Include="Assets\Scripts\Model\Status.cs" />
+    <Compile Include="Assets\Scripts\Music\GlobalMusicControl.cs" />
+    <Compile Include="Assets\Scripts\Music\MusicControl.cs" />
     <Compile Include="Assets\Scripts\ready\ReadySelect.cs" />
     <Compile Include="Assets\Scripts\ready\Return.cs" />
     <Compile Include="Assets\Scripts\settlement\AttributeUp.cs" />

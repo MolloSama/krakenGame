@@ -19,11 +19,12 @@ public class skillControl : MonoBehaviour {
                 if(GlobalVariable.FightSkills[i]!=null)
                     foreach (GameObject t in SkillSelect.skillOnGrid)
                     {
-                        if (t.GetComponent<SkillSelect>().skill.SerialNumber.Equals(GlobalVariable.FightSkills[i].SerialNumber))
-                        {
-                            t.transform.Find("skill").GetComponent<SpriteRenderer>().material = Resources.Load<Material>("materials/Default");
-                            break;
-                        }
+                        if(t!=null)
+                            if (t.GetComponent<SkillSelect>().skill.SerialNumber.Equals(GlobalVariable.FightSkills[i].SerialNumber))
+                            {
+                                t.transform.Find("skill").GetComponent<SpriteRenderer>().material = Resources.Load<Material>("materials/Default");
+                                break;
+                            }
                     }
                 GlobalVariable.FightSkills[i] = null;
             }

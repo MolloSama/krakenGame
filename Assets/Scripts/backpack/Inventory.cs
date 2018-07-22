@@ -28,12 +28,12 @@ public class Inventory : MonoBehaviour {
         ShowItems();
         GameObject.Find("kraken").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("kraken/kraken");
 
-        GameObject.Find("krakenInfo").GetComponent<TextMesh>().text = string.Format("属性：\n" +
+        GameObject.Find("krakenInfo").GetComponent<TextMesh>().text = string.Format("属性：无\n" +
                                                                                   "名字：{0}\n" +
                                                                                   "攻击：{1}\n" +
                                                                                   "防御：{2}\n" +
                                                                                   "血量：{3}\n",
-                                                                                  GlobalVariable.kraKen.Name, GlobalVariable.kraKen.AttactPower, GlobalVariable.kraKen.DefensivePower, GlobalVariable.kraKen.BloodVolume);
+                                                                                  "鲲灵", GlobalVariable.kraKen.AttactPower, GlobalVariable.kraKen.DefensivePower, GlobalVariable.kraKen.BloodVolume);
 
 
 
