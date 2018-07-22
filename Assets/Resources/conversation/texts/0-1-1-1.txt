@@ -1,0 +1,6 @@
+﻿scene=pic002=战斗胜利后会获得卡牌奖励。
+scene=pic002=获得卡牌——坚如磐石、战斗激励
+get_card=002
+get_card=002
+get_card=003
+get_card=003
