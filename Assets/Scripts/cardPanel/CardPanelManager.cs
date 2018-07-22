@@ -25,6 +25,7 @@ public class CardPanelManager : MonoBehaviour {
 
     private List<GameObject> cardgridobjects = new List<GameObject>();
 
+
     private void Awake()
     {
         _instance = this;
@@ -42,11 +43,11 @@ public class CardPanelManager : MonoBehaviour {
 		
 	}
 
-    public void CancelSelect(string serialNumber)
+    public void CancelSelect(CardProp card)
     {
         foreach(GameObject t in cardgridobjects)
         {
-            if (t.GetComponent<CardSelect>().gameProp.SerialNumber.Equals(serialNumber))
+            if (t.GetComponent<CardSelect>().gameProp.Equal(card.index))
             {
                 t.transform.Find("card-style").GetComponent<SpriteRenderer>().material = Resources.Load<Material>("materials/Default");
                 t.transform.Find("card-raw-img").GetComponent<SpriteRenderer>().material = Resources.Load<Material>("materials/Default");
@@ -63,19 +64,20 @@ public class CardPanelManager : MonoBehaviour {
             Destroy(t);
         }
         cardgridobjects.Clear();
+
         for (int i = 0; i < row * column && (i + index) < GlobalVariable.ExistingCards.Count; i++) 
         {
             bool contains = false;
             for (int j = 0; j < CardSelect.count; j++)
             {
-                if (CardSelect.fightCardsGrids[j].SerialNumber.Equals(GlobalVariable.ExistingCards[i + index].SerialNumber))
+                if (CardSelect.fightCardsGrids[j].Equal(i + index))
                 {
                     contains = true;
                     break;
                 }
             }
             GameObject temp = Instantiate(Resources.Load<GameObject>("cardpanel/card"), new Vector3(firstPositionX + (i % column) * grapX, firstPositionY + (i / column) * grapY, firstPositionZ), Quaternion.identity);
-            temp.GetComponent<CardSelect>().LoadCard(GlobalVariable.ExistingCards[i + index]);
+            temp.GetComponent<CardSelect>().LoadCard(GlobalVariable.ExistingCards[i + index], i + index);
             cardgridobjects.Add(temp);
             temp.transform.parent = gameObject.transform;
             foreach (Transform t in temp.transform)

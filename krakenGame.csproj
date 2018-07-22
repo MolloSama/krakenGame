@@ -13,14 +13,12 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.4.3f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -276,6 +274,7 @@
     <Compile Include="Assets\Scripts\fightSystem\StartMonsterRound.cs" />
     <Compile Include="Assets\Scripts\fightSystem\StartPlayCard.cs" />
     <Compile Include="Assets\Scripts\fightSystem\TextOrder.cs" />
+    <Compile Include="Assets\Scripts\Icon\ButtonFlow.cs" />
     <Compile Include="Assets\Scripts\Icon\PanelControl.cs" />
     <Compile Include="Assets\Scripts\map\IntoFight.cs" />
     <Compile Include="Assets\Scripts\map\MainMapMouse.cs" />
@@ -302,6 +301,7 @@
     <Compile Include="Assets\Scripts\skillPanel\SkillGridSelect.cs" />
     <Compile Include="Assets\Scripts\skillPanel\SkillSelect.cs" />
     <Compile Include="Assets\Scripts\startMenu\FadeScene.cs" />
+    <Compile Include="Assets\Scripts\startMenu\QuitGame.cs" />
     <Compile Include="Assets\Scripts\startMenu\StartMenuMouse.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -17,21 +17,6 @@ public class PanelManager : MonoBehaviour {
     void Start () {
 
         Init();
-
-
-
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100002", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100003", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100002", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100003", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100002", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100003", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
-        GlobalVariable.ExistingLeadSkills.Add(new GameProp("100001", "气灸术", 0, "a2c2", "在回合结束时回复10 % 生命值，持续5回合", 0.1f, 5, 0, 0, "0", "hp_add"));
         ShowSkill();
     }
 	// Update is called once per frame

@@ -4,21 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartMenuMouse : MonoBehaviour {
-    private float baseScaleX = 0.4f;
-    private float baseScaleY = 0.3f;
-    private float baseScaleZ = 1.0f;
-    private float changeScaleX = 0.44f;
-    private float changeScaleY = 0.33f;
-    private float changeScaleZ = 1.00f;
 
     // Use this for initialization
     void Start () {
-        baseScaleX = GameObject.Find("button1").transform.localScale.x;
-        baseScaleY = GameObject.Find("button1").transform.localScale.y;
-        baseScaleZ = GameObject.Find("button1").transform.localScale.z;
-        changeScaleX = baseScaleX * 1.2f;
-        changeScaleY = baseScaleY * 1.2f;
-        changeScaleZ = baseScaleZ * 1.2f;
+
     }
 	
 	// Update is called once per frame
@@ -43,17 +32,5 @@ public class StartMenuMouse : MonoBehaviour {
         {
 
         }
-    }
-
-    //Mouse enter
-    public void OnMouseEnter()
-    {
-        transform.localScale = new Vector3(changeScaleX, changeScaleY, changeScaleZ);
-    }
-
-    //Mouse exit
-    public void OnMouseExit()
-    {
-        transform.localScale = new Vector3(baseScaleX, baseScaleY, baseScaleZ);
     }
 }

@@ -4,26 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMapMouse : MonoBehaviour {
-    private float baseScaleX;
-    private float baseScaleY;
-    private float baseScaleZ = 1.0f;
-    private float changeScaleX;
-    private float changeScaleY;
-    private float changeScaleZ = 1.00f;
     // Use this for initialization
     void Start () {
-        baseScaleX = gameObject.transform.localScale.x;
-        baseScaleY = gameObject.transform.localScale.y;
-        baseScaleZ = gameObject.transform.localScale.z;
-        changeScaleX = baseScaleX * 1.2f;
-        changeScaleY = baseScaleY * 1.2f;
-        changeScaleZ = baseScaleZ;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void OnMouseUpAsButton()
     {
@@ -38,14 +22,6 @@ public class MainMapMouse : MonoBehaviour {
                 break;
             }
         }
-    }
-    public void OnMouseEnter()
-    {
-        transform.localScale = new Vector3(changeScaleX, changeScaleY, changeScaleZ);
-    }
-    public void OnMouseExit()
-    {
-        transform.localScale = new Vector3(baseScaleX, baseScaleY, baseScaleZ);
     }
 }
 public class MountainInformation

@@ -43,6 +43,7 @@ public class CardRender : MonoBehaviour {
             Sprite rawImg = Resources.Load<Sprite>("cardRawImg/" + randomCard.SerialNumber);
             cardRawImg.sprite = rawImg;
             cardRawImg.sortingOrder = cardStyle.sortingOrder + 1;
+            GlobalVariable.ExistingCards.Add(randomCard);
         }
     }
 	

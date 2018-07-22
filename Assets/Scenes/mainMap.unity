@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 116375595}
   - component: {fileID: 116375594}
   - component: {fileID: 116375597}
+  - component: {fileID: 116375598}
   m_Layer: 0
   m_Name: SelectCard
   m_TagString: Untagged
@@ -224,6 +225,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60db9067d981e9745a33724880a26554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &116375598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116375593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &165153750
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +247,7 @@ GameObject:
   - component: {fileID: 165153753}
   - component: {fileID: 165153752}
   - component: {fileID: 165153751}
+  - component: {fileID: 165153755}
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
@@ -335,6 +348,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &165153755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165153750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1096189126
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +609,7 @@ GameObject:
   - component: {fileID: 1766529027}
   - component: {fileID: 1766529026}
   - component: {fileID: 1766529029}
+  - component: {fileID: 1766529030}
   m_Layer: 0
   m_Name: SkillSelect
   m_TagString: Untagged
@@ -685,6 +710,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60db9067d981e9745a33724880a26554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1766529030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766529025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2032980277
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +732,7 @@ GameObject:
   - component: {fileID: 2032980279}
   - component: {fileID: 2032980278}
   - component: {fileID: 2032980281}
+  - component: {fileID: 2032980282}
   m_Layer: 0
   m_Name: Backpack
   m_TagString: Untagged
@@ -794,6 +831,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60db9067d981e9745a33724880a26554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2032980282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032980277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b0abbc62439414b943154496e52136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2083162359

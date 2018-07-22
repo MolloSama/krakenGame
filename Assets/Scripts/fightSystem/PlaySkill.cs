@@ -113,7 +113,7 @@ public class PlaySkill : MonoBehaviour {
         skillDescription = skill.transform.Find("skill-description").GetComponent<TextMesh>();
         skillIcon = skill.transform.Find("skill-icon").GetComponent<SpriteRenderer>();
         skillName.text = skillProp.Name;
-        skillDescription.text = Regex.Replace(skillProp.Description, @"\S{6}", "$0\r\n");
+        skillDescription.text = Regex.Replace(skillProp.Description, @"\S{8}", "$0\r\n");
         skillIcon.sprite = Resources.Load<Sprite>("skill/" + skillProp.SerialNumber);
     }
 

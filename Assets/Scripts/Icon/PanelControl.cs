@@ -53,7 +53,7 @@ public class PanelControl : MonoBehaviour {
 
                         for (int i = 0; i < CardSelect.count; i++)
                         {
-                            GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i]);
+                            GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i].gameProp);
                         }
                         CardSelect.Clear();
                         BarScript.Clear();
@@ -80,7 +80,7 @@ public class PanelControl : MonoBehaviour {
                         GlobalVariable.FightCards.Clear();
                         for (int i = 0; i < CardSelect.count; i++)
                         {
-                            GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i]);
+                            GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i].gameProp);
                         }
                         CardSelect.Clear();
                         BarScript.Clear();
@@ -160,5 +160,9 @@ public class PanelControl : MonoBehaviour {
             open = true;
             return;
         }
+    }
+    private void OnMouseEnter()
+    {
+        
     }
 }

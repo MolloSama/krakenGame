@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1005557126102744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 1.9557775, z: 0.00084227056}
+  m_LocalPosition: {x: -0.25, y: 1.92, z: 0.00084227056}
   m_LocalScale: {x: 6.130268, y: 5.908693, z: 1}
   m_Children: []
   m_Father: {fileID: 4605458936247622}
@@ -145,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531670811575186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37394628, y: -0.22748439, z: 1}
+  m_LocalPosition: {x: 0.37394628, y: -0.15, z: 1}
   m_LocalScale: {x: 0.41379312, y: 0.3988368, z: 1}
   m_Children: []
   m_Father: {fileID: 4605458936247622}
@@ -178,7 +178,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a6ba8530e26fff741b35df06342d933b, type: 3}
+  - {fileID: 2100000, guid: 5581d43031d72f44a9c550b444a3e217, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -212,7 +212,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a6ba8530e26fff741b35df06342d933b, type: 3}
+  - {fileID: 2100000, guid: 5581d43031d72f44a9c550b444a3e217, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -271,10 +271,10 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 0
-  m_FontSize: 400
+  m_FontSize: 350
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: a6ba8530e26fff741b35df06342d933b, type: 3}
+  m_Font: {fileID: 12800000, guid: 5581d43031d72f44a9c550b444a3e217, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4281677118
@@ -295,7 +295,7 @@ TextMesh:
   m_FontSize: 20
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: a6ba8530e26fff741b35df06342d933b, type: 3}
+  m_Font: {fileID: 12800000, guid: 5581d43031d72f44a9c550b444a3e217, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -353,7 +353,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1523278859
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e24af532070e19a419a6a8accda53c9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -397,7 +397,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1523278859
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bc5aa55cc5c2a874986e01a2aba9ef95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -407,5 +407,5 @@ SpriteRenderer:
   m_Size: {x: 15, y: 15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

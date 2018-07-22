@@ -34,7 +34,7 @@ public class Return : MonoBehaviour {
             case "cardPanelReturn":
                 for (int i = 0; i < CardSelect.count; i++)
                 {
-                    GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i]);
+                    GlobalVariable.FightCards.Add(CardSelect.fightCardsGrids[i].gameProp);
                 }
                 break;
             case "backpackReturn":

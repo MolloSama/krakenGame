@@ -52,6 +52,21 @@ public class LoadConversation : MonoBehaviour {
         GameObject panel = GameObject.Find("white");
         if(data.Length==3)
         {
+            if (data[0].Equals("主角"))
+            {
+                panel.transform.Find("leadName").transform.GetComponent<TextMesh>().text = data[0];
+                panel.transform.Find("npcName").transform.GetComponent<TextMesh>().text = "";
+            }
+            else if(data[0].Equals("scene"))
+            {
+                panel.transform.Find("leadName").transform.GetComponent<TextMesh>().text = "";
+                panel.transform.Find("npcName").transform.GetComponent<TextMesh>().text = "";
+            }
+            else
+            {
+                panel.transform.Find("npcName").transform.GetComponent<TextMesh>().text = data[0];
+                panel.transform.Find("leadName").transform.GetComponent<TextMesh>().text = "";
+            }
             gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(string.Format("conversation/scenes/{0}", data[1]));
             foreach (Transform t in panel.transform)
             {

@@ -24,7 +24,7 @@ public class SaveControl : MonoBehaviour {
         for(int i = 0; i < 4; ++i)
         {
             GameObject pane =
-                Instantiate(savePanePrefab, savePanePosition.position + new Vector3(0, -i * 2.4f, 0), Quaternion.identity);
+                Instantiate(savePanePrefab, savePanePosition.position + new Vector3(0, -i * 2f, 0), Quaternion.identity);
             pane.GetComponent<MoveBorder>().index = increaseIndex++;
             numberPaneReflect.Add(pane.GetComponent<MoveBorder>().index, pane);
             if (saveNumberReflect.ContainsKey(i))

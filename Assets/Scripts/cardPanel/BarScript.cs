@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BarScript : MonoBehaviour {
-    private GameProp gameProp = null;
+    private CardProp gameProp = null;
 
     public static bool clickable = true;
 
@@ -24,7 +24,7 @@ public class BarScript : MonoBehaviour {
 		
 	}
 
-    public void SetGameProp(GameProp temp)
+    public void SetGameProp(CardProp temp)
     {
         gameProp = temp;
     }
@@ -33,13 +33,13 @@ public class BarScript : MonoBehaviour {
     {
         if (clickable)
         {
-            CardPanelManager._instance.CancelSelect(gameProp.SerialNumber);
+            CardPanelManager._instance.CancelSelect(gameProp);
             CardSelect._instance.CallAlterFithtGrids(false, index);
         }
     }
 
     public string Name()
     {
-        return gameProp.Name;
+        return gameProp.gameProp.Name;
     }
 }
