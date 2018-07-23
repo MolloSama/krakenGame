@@ -11,6 +11,10 @@ public class Escape : MonoBehaviour {
     // Use this for initialization
     void Start () {
         demarcationline = 50;
+        if (GlobalVariable.currentScene.StartsWith("0"))
+        {
+            demarcationline = 0;
+        }
 	}
     
 

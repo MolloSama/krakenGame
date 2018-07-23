@@ -24,7 +24,7 @@ public class SaveFile : MonoBehaviour {
         if (!isStartMenu)
         {
             IFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream("Assets/Save/" + MoveBorder.currentIndex + ".bin",
+            FileStream stream = new FileStream(saveControl.savePath+ MoveBorder.currentIndex + ".bin",
                 FileMode.Create, FileAccess.Write);
             SaveModel save = new SaveModel();
             formatter.Serialize(stream, save);

@@ -29,7 +29,7 @@ public static class GlobalVariable{
     public static List<string> HasFightBossScenes = new List<string>();
     public static string currentScene = "scene2";
     public static string preMap = null;
-    public static readonly int MAX_NUMBER_OF_FIGHT_CARDS = 30;
+    public static readonly int MAX_NUMBER_OF_FIGHT_CARDS = 30; 
     public static bool Chance(int demarcationline)
     {
         int randomInt = Random.Range(1, 101);

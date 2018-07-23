@@ -13,13 +13,15 @@ public class SaveControl : MonoBehaviour {
     private int increaseIndex = 0;
     public Dictionary<int, SaveModel> saveNumberReflect = new Dictionary<int, SaveModel>();
     public Dictionary<int, GameObject> numberPaneReflect = new Dictionary<int, GameObject>();
+    public string savePath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\\bmkz\\";
 
     // Use this for initialization
     void Start () {
-        var files = Directory.GetFiles("Assets/Save/", "*.bin");
+        CreateDirectory(savePath);
+        var files = Directory.GetFiles(savePath, "*.bin");
         foreach (string file in files)
         {
-            saveNumberReflect.Add(int.Parse(file.Split('/')[2].Split('.')[0]), null);
+            saveNumberReflect.Add(int.Parse(file.Split('\\')[5].Split('.')[0]), null);
         }
         for(int i = 0; i < 4; ++i)
         {
@@ -53,12 +55,19 @@ public class SaveControl : MonoBehaviour {
     SaveModel LoadSaveFile(int index)
     {
         IFormatter formatter = new BinaryFormatter();
-        FileStream stream = new FileStream("Assets/Save/" + index + ".bin",
+        FileStream stream = new FileStream(savePath + index + ".bin",
             FileMode.Open);
         SaveModel save = (SaveModel)formatter.Deserialize(stream);
         stream.Close();
         return save;
     }
 
-    
+    void CreateDirectory(string path)
+    {
+        if (!Directory.Exists(path))
+        {
+            // Create the directory it does not exist.
+            Directory.CreateDirectory(path);
+        }
+    }
 }

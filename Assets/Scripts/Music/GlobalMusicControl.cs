@@ -14,14 +14,13 @@ public class GlobalMusicControl : MonoBehaviour
         
         if (preMusic == null)
         {
-            MyUIMusic = (GameObject)Instantiate(globalUIMusic);
+            MyUIMusic = Instantiate(globalUIMusic);
             preMusic = MyUIMusic;
         }
-        print(preMusic.name.Replace("(Clone)", "") + " " + globalUIMusic.name);
         if (!preMusic.name.Replace("(Clone)", "").Equals(globalUIMusic.name))
         {
             Destroy(preMusic);
-            MyUIMusic = (GameObject)Instantiate(globalUIMusic);
+            MyUIMusic = Instantiate(globalUIMusic);
             preMusic = MyUIMusic;
         }
     }
